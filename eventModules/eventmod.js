@@ -19,6 +19,6 @@ event.on('get_response', (sc, msg)=>{
 })
 
 
-event.emit('get_response', 200, 'ok')
+event.emit('get_response', '200', 'ok')
 
 

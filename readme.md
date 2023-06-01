@@ -31,3 +31,7 @@ types :
 3. error
 4. finish
 
+const stream = fs.createReadStream('data.txt')
+stream.createstream
+
+fs.pipe()
