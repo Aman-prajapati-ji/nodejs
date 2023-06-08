@@ -20,11 +20,17 @@ app.get('/home', (req, res)=>{
     res.send('hello mera bhai')
 })
 
-app.get('*', (req, res)=>{
-    res.render('404', {
-        error:'400 Not Found'
-    })
+app.get('/about', (req, res)=>{
+    userId = req.query
+    console.log(userId)
+    res.send(`your id is ${userId.id}`)
 })
+
+// app.get('*', (req, res)=>{
+//     res.render('404', {
+//         error:'400 Not Found'
+//     })
+// })
 
 app.listen(8000, '127.0.0.1', (err)=>{
     console.log('server running')

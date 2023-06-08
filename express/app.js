@@ -1,5 +1,5 @@
 const exp = require('express')
-
+const PORT = process.env.PORT || 8000
 const express = exp()
 
 express.get('/', (req, res)=>{
@@ -35,6 +35,6 @@ express.get('/aboutus', (req, res)=>{
     res.send('about us page')
 })
 
-express.listen(8000, ()=>{
+express.listen(PORT, '127.0.0.1', ()=>{
     console.log('server is running')
 })
